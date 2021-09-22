@@ -3,3 +3,24 @@
         @content;
     }
 }
+
+@mixin set-position($position,$top:null,$bottom:null,$left:null,$right:null){
+    position: $position;
+    top: $top;
+    bottom: $bottom;
+    left:$left;
+    right: $right;
+}
+
+@mixin set-font($size,$weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin set-flex($flex,$justify-content:null,$align-items:null,$flex-direction:null){
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
+

@@ -20,7 +20,6 @@
 }
 
 .nav .left-side i {
-  color: crimson;
   position: relative;
   font-size: 20px;
   color: #FFFFFF;
@@ -29,11 +28,11 @@
 .nav .left-side i::after {
   content: "";
   position: absolute;
+  top: 18px;
+  left: 2px;
   background-color: #151515;
   width: 8px;
   height: 8px;
-  top: 18px;
-  left: 2px;
   border-radius: 50%;
 }
 
@@ -48,8 +47,6 @@
   position: absolute;
   top: 4px;
   left: -11px;
-  width: 0;
-  height: 0;
   border-style: solid;
   border-width: 0 8px 8px 0;
   border-color: transparent #FFFFFF transparent transparent;
@@ -71,20 +68,18 @@
 }
 
 .nav .nav-list li {
-  list-style: none;
   margin-right: 20px;
 }
 
 .nav .nav-list li a {
-  text-decoration: none;
   font-size: 16px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
 .nav .nav-list li i {
-  font-weight: 400;
   font-size: 24px;
+  font-weight: 400;
   margin-left: -18px;
   color: #FFFFFF;
 }
@@ -92,22 +87,21 @@
 .nav .right-side a {
   background-color: #FA3C45;
   padding: 14px 24px;
-  color: white;
+  color: #FFFFFF;
   border: none;
   border-radius: 8px;
   position: relative;
-  text-decoration: none;
 }
 
 .nav .right-side a::after {
   content: "";
   position: absolute;
+  top: 6px;
+  left: -60px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
   background-color: #fde5e6;
-  top: 6px;
-  left: -60px;
 }
 
 #model-sv .model {
@@ -137,7 +131,6 @@
   color: white;
   border: none;
   border-radius: 8px;
-  text-decoration: none;
 }
 
 #model-sv .model .box .content-btn {
@@ -162,7 +155,6 @@
   display: -ms-flexbox;
   display: flex;
   color: #FFFFFF;
-  list-style: none;
   padding: 30px 0 60px 0;
 }
 
@@ -251,10 +243,10 @@
 }
 
 #our-collection .content-model .content-icon .icons i {
-  color: crimson;
+  color: #FA3C45;
   width: 15px;
   height: 15px;
-  background: white;
+  background: #FFFFFF;
   line-height: 15px;
   text-align: center;
   border-radius: 50%;
@@ -315,8 +307,8 @@
 
 #milestone .over-develop p {
   color: #9a9ab0;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
 }
 
 #milestone .over-develop ul {
@@ -328,16 +320,15 @@
 
 #milestone .over-develop ul li {
   margin-right: 16%;
-  list-style: none;
-  font-weight: 700;
   font-size: 50px;
+  font-weight: 700;
   color: #9a9ab0;
 }
 
 #milestone .over-develop ul li:first-child {
   color: #FA3C45;
-  font-weight: 700;
   font-size: 50px;
+  font-weight: 700;
 }
 
 #milestone .over-develop ul li:first-child p {
@@ -354,23 +345,22 @@
 }
 
 #features .left-side h2 {
-  font-weight: 700;
-  color: white;
-  text-transform: capitalize;
   font-size: 49px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: capitalize;
   padding-bottom: 20px;
 }
 
 #features .left-side p {
-  color: white;
-  font-weight: 200;
+  color: #FFFFFF;
   font-size: 16px;
+  font-weight: 200;
   line-height: 20px;
 }
 
 #features .left-side ul {
   padding-left: 50px;
-  list-style: none;
   padding-top: 20px;
 }
 
@@ -545,8 +535,8 @@
 
 #reviews .header h2 {
   color: #2e2e2e;
-  font-weight: 700;
   font-size: 48px;
+  font-weight: 700;
   padding: 1% 26%;
 }
 
@@ -564,19 +554,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 3% 0;
 }
 
 #reviews .img-testimonial .testimonial h4 {
-  font-weight: 700;
   font-size: 31px;
+  font-weight: 700;
   padding: 0 11%;
   text-align: center;
 }
@@ -610,15 +600,15 @@
 }
 
 #download-app .download-our-app h2 {
-  font-weight: 700;
   font-size: 48px;
+  font-weight: 700;
   color: #11142d;
   text-transform: capitalize;
 }
 
 #download-app .download-our-app p {
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   color: #92929d;
   padding: 3% 0;
 }
@@ -628,9 +618,8 @@
 }
 
 #download-app .download-our-app ul li {
-  list-style: none;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   color: #11142d;
   margin-bottom: 2%;
   text-transform: capitalize;
@@ -651,7 +640,6 @@
   border: 1px solid #cfcfcf;
   border-radius: 5px;
   width: 40%;
-  text-decoration: none;
   text-align: center;
   margin-right: 2%;
   color: black;
@@ -690,13 +678,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #newsletter .header-input h2 {
@@ -769,7 +757,7 @@
 }
 
 footer {
-  background-color: #C5010A;
+  background-color: #c5010a;
   padding: 5% 0 1% 0;
 }
 
@@ -795,13 +783,13 @@ footer {
 }
 
 #footer-contact .logo-company-social-contact .logo-footer .left-side i::after {
-  background-color: #C5010A;
+  background-color: #c5010a;
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
   top: 18px;
   left: 2px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
 }
 
@@ -828,8 +816,8 @@ footer {
 }
 
 #footer-contact .logo-company-social-contact .logo-footer .our-studio {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   color: #FFFFFF;
   width: 53%;
   text-align: justify;
@@ -847,14 +835,12 @@ footer {
 }
 
 #footer-contact .logo-company-social-contact .company-social-list ul li {
-  list-style: none;
   margin-bottom: 10%;
 }
 
 #footer-contact .logo-company-social-contact .company-social-list ul li a {
-  text-decoration: none;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   color: #FFFFFF;
 }
 
@@ -864,12 +850,8 @@ footer {
 
 #footer-contact .logo-company-social-contact .company-social-list ul li:first-child a {
   font-size: 18px;
-  color: #FFFFFF;
   font-weight: 700;
-}
-
-#footer-contact .logo-company-social-contact .contact-list ul {
-  list-style: none;
+  color: #FFFFFF;
 }
 
 #footer-contact .logo-company-social-contact .contact-list ul li {
@@ -877,13 +859,15 @@ footer {
 }
 
 #footer-contact .logo-company-social-contact .contact-list ul li a {
-  text-decoration: none;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: nul;
+      -ms-flex-pack: nul;
+          justify-content: nul;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -905,4 +889,12 @@ body {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
