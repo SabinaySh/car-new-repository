@@ -1,0 +1,83 @@
+// Navbar Start
+.nav{
+    .left-side{
+        i{
+            &::after{
+                background-color: $bg-color-red;
+            }
+        }
+    }
+}
+// Navbar End
+
+//Section Explore Start
+#explore{
+    background-color:$bg-color-red;
+    height: 50vh;
+    @include set-position(relative,-92px,null,0,null);
+        h1{
+            @include set-position(absolute,50%,null,39%,null);
+            @include set-font(62px,700);
+            color:$secondary-color;
+        }
+}
+//Section Explore End
+
+// Section Home-Inventory Start
+#home-inventory{
+    .breadcrumb-inp{
+        ul{
+            padding: 0;
+            display: flex;
+            li,a{
+                color: black;
+                @include set-font(24px,700);
+            }
+        }
+        .select-form{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 2%;
+            div{
+                padding:0 2% 2% 0;
+                border-radius: 7px;
+                .form-select{
+                    padding: 5%;
+                }
+            }
+        }
+    }
+}
+// Section Home-Inventory End
+
+// Section Contents Start
+#contents{
+    padding-top:5%;
+    .categories-tesla{
+        .categories{
+            display: flex;
+            justify-content: space-between;
+            .form-search{
+                .search-btn{
+                    border: none;
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                }
+            }
+            ul{
+                padding: 0;
+                display: flex;
+                li{
+                    // margin-right: 5%;
+                    &:first-child{
+                        color: $primary-color;
+                    }
+                    &:nth-child(2){
+                        // padding: 0 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+// Section Contents End

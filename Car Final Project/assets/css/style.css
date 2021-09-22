@@ -884,6 +884,88 @@ footer {
   padding-top: 3%;
 }
 
+.nav .left-side i::after {
+  background-color: #c5010a;
+}
+
+#explore {
+  background-color: #c5010a;
+  height: 50vh;
+  position: relative;
+  top: -92px;
+  left: 0;
+}
+
+#explore h1 {
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  font-size: 62px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+#home-inventory .breadcrumb-inp ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#home-inventory .breadcrumb-inp ul li, #home-inventory .breadcrumb-inp ul a {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#home-inventory .breadcrumb-inp .select-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 2%;
+}
+
+#home-inventory .breadcrumb-inp .select-form div {
+  padding: 0 2% 2% 0;
+  border-radius: 7px;
+}
+
+#home-inventory .breadcrumb-inp .select-form div .form-select {
+  padding: 5%;
+}
+
+#contents {
+  padding-top: 5%;
+}
+
+#contents .categories-tesla .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contents .categories-tesla .categories .form-search .search-btn {
+  border: none;
+  background-color: #FA3C45;
+  color: #FFFFFF;
+}
+
+#contents .categories-tesla .categories ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contents .categories-tesla .categories ul li:first-child {
+  color: #FA3C45;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   overflow-x: hidden;
