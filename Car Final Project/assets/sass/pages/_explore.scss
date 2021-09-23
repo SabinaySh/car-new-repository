@@ -1,83 +1,262 @@
 // Navbar Start
-.nav{
-    .left-side{
-        i{
-            &::after{
-                background-color: $bg-color-red;
-            }
-        }
+.nav {
+  .left-side {
+    i {
+      &::after {
+        background-color: $bg-color-red !important;
+      }
     }
+  }
 }
 // Navbar End
 
 //Section Explore Start
-#explore{
-    background-color:$bg-color-red;
-    height: 50vh;
-    @include set-position(relative,-92px,null,0,null);
-        h1{
-            @include set-position(absolute,50%,null,39%,null);
-            @include set-font(62px,700);
-            color:$secondary-color;
-        }
+#explore {
+  background-color: $bg-color-red;
+  height: 50vh;
+  @include set-position(relative, -92px, null, 0, null);
+  h1 {
+    @include set-position(absolute, 50%, null, 39%, null);
+    @include set-font(62px, 700);
+    color: $secondary-color;
+  }
 }
 //Section Explore End
 
 // Section Home-Inventory Start
-#home-inventory{
-    .breadcrumb-inp{
-        ul{
-            padding: 0;
-            display: flex;
-            li,a{
-                color: black;
-                @include set-font(24px,700);
-            }
-        }
-        .select-form{
-            display: flex;
-            flex-wrap: wrap;
-            padding-top: 2%;
-            div{
-                padding:0 2% 2% 0;
-                border-radius: 7px;
-                .form-select{
-                    padding: 5%;
-                }
-            }
-        }
+#home-inventory {
+  .breadcrumb-inp {
+    ul {
+      padding: 0;
+      display: flex;
+      li,
+      a {
+        color: black;
+        @include set-font(24px, 700);
+      }
     }
+    .select-form {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 2%;
+      div {
+        padding: 0 2% 2% 0;
+        border-radius: 7px;
+        .form-select {
+          padding: 5%;
+        }
+      }
+    }
+  }
 }
 // Section Home-Inventory End
 
 // Section Contents Start
-#contents{
-    padding-top:5%;
-    .categories-tesla{
-        .categories{
-            display: flex;
-            justify-content: space-between;
-            .form-search{
-                .search-btn{
-                    border: none;
-                    background-color: $primary-color;
-                    color: $secondary-color;
-                }
-            }
-            ul{
-                padding: 0;
-                display: flex;
-                li{
-                    // margin-right: 5%;
-                    &:first-child{
-                        color: $primary-color;
-                    }
-                    &:nth-child(2){
-                        // padding: 0 5%;
-                    }
-                }
-            }
+#contents {
+  padding-top: 5%;
+  background-color: #f7f7fc;
+  .categories-tesla {
+    .categories {
+      display: flex;
+      position: relative;
+      padding-bottom: 3%;
+      .form-search {
+        position: relative;
+        .search-btn {
+          border: none;
+          background-color: $primary-color;
+          color: $secondary-color;
+          padding: 12px 24px 12px 24px;
+          border-radius: 5px;
+          margin-left: 15px;
         }
+        .inp-search {
+          width: 415px;
+          padding: 2% 3%;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          border: 2px solid #ddd;
+        }
+        h5 {
+          @include set-position(absolute, 10px, null, 20px, null);
+          color: #11142d;
+          @include set-font(24px, 700);
+        }
+      }
+      ul {
+        @include set-position(absolute, 0, null, null, 6%);
+        padding: 0;
+        @include set-flex(flex, center, null, null);
+        li {
+          @include set-font(24px, 700);
+          color: #9a9ab0;
+          &:first-child {
+            color: $primary-color;
+          }
+          &:nth-child(2) {
+            padding: 0 16%;
+          }
+        }
+      }
     }
+    h1 {
+      padding-top: 3%;
+      @include set-font(48px, 700);
+      color: #11142d;
+    }
+    .filters {
+      padding: 3% 0 5% 0;
+      @include set-flex(flex, space-between, null, null);
+      .tesla {
+        @include set-font(16px, 400);
+        color: #9a9ab0;
+      }
+      .filter-icon {
+        @include set-flex(flex, null, center, null);
+        .sort {
+          @include set-font(16px, 700);
+          color: #11142d;
+          margin: 0;
+        }
+        form {
+          margin-left: 18px;
+          .form-select {
+            width: 125px;
+            border-radius: 5px;
+            padding: 5px 17px;
+          }
+        }
+        .icons {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .product-list {
+    .list {
+      display: flex;
+      .tesla-model {
+        padding: 0 7%;
+        h5 {
+          color: $primary-color;
+          @include set-font(14px, 700);
+        }
+        .model-new {
+          @include set-font(24px, 700);
+          color: #11142d;
+          span {
+            @include set-font(14px, 400);
+            color: black;
+          }
+        }
+        ul {
+          width: 400px;
+          padding: 0;
+          display: flex;
+          li {
+            color: #92929d;
+            @include set-font(12px, 700);
+            p {
+              color: black;
+              @include set-font(16px, 700);
+            }
+            &:nth-child(2) {
+              margin: 0 10%;
+            }
+          }
+        }
+        .price-btn {
+          display: flex;
+          justify-content: space-between;
+          h3 {
+            @include set-font(39px, 700);
+            color: $primary-color;
+          }
+          .details-btn {
+            padding: 11px 24px;
+            background-color: $primary-color;
+            color: $secondary-color;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+          }
+        }
+      }
+      .img {
+        width: 296px;
+        height: 200px;
+        border-radius: 8px;
+        img {
+          border-radius: 8px;
+        }
+      }
+    }
+    .pagination {
+      @include set-flex(flex,center);
+      padding: 5% 0;
+      li {
+        margin-right: 4%;
+        a {
+          color: #92929d;
+        }
+        &:nth-child(2){
+          a{
+            background-color: $bg-color-red;
+            color:$secondary-color;
+            border-radius: 4px;
+            padding: 0 6px;
+          }
+        }
+        &:last-child{
+          a{
+            color: $bg-color-red;
+          }
+        }
+      }
+    }
+  }
+  .promo-card {
+    background-color: $bg-color-red;
+    @include set-flex(flex, null, center, column);
+    padding: 40% 22%;
+    color: $secondary-color;
+    border-radius: 8px;
+    h3 {
+      text-align: center;
+    }
+    h5 {
+      text-align: center;
+      padding: 10% 0;
+    }
+    .details-btn {
+      border-radius: 8px;
+      padding: 10px 24px 10px 24px;
+      border: 2px solid #ddd;
+      @include set-font(16px, 700);
+      color: $secondary-color;
+    }
+  }
+  .contact-us {
+    background-color: $secondary-color;
+    border-radius: 8px;
+    @include set-flex(flex, null, center, column);
+    margin-top: 15px;
+    padding: 22% 3%;
+    h3 {
+      @include set-font(30px, 700);
+    }
+    h5 {
+      @include set-font(20px, 400);
+      color: #92929d;
+      padding: 3% 0;
+    }
+    .contact-btn {
+      padding: 11px 24px;
+      border-radius: 8px;
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+  }
 }
 // Section Contents End

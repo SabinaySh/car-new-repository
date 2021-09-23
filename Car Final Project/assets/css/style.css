@@ -30,7 +30,7 @@
   position: absolute;
   top: 18px;
   left: 2px;
-  background-color: #151515;
+  background-color: #151515 !important;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -254,39 +254,14 @@
   padding: 5px;
 }
 
-#our-collection .boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#our-collection .boxes .p-2 {
-  height: 400px;
-  width: 400px;
-}
-
-#our-collection .boxes .p-2 img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#our-collection .boxes .p-1 {
-  height: 400px;
-  width: 816px;
-}
-
-#our-collection .boxes .p-1 img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 #milestone {
   padding: 100px 0;
   background-color: #f7f7fc;
+}
+
+#milestone .img {
+  width: 608px;
+  height: 544px;
 }
 
 #milestone .over-develop {
@@ -391,13 +366,14 @@
   line-height: 20px;
 }
 
-#features .right-side {
+#features .right-side .img {
   border-radius: 5px;
+  width: 608px;
+  height: 608px;
 }
 
-#features .right-side img {
+#features .right-side .img img {
   border-radius: 5px;
-  width: 570px;
 }
 
 #clients {
@@ -435,49 +411,7 @@
   text-transform: capitalize;
 }
 
-#new-items .items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-}
-
-#new-items .items .item {
-  width: 558px;
-  border-radius: 5px;
-  position: relative;
-}
-
-#new-items .items .item img {
-  width: 540px;
-  border-radius: 5px;
-}
-
-#new-items .items .item.right-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border-radius: 5px;
-}
-
-#new-items .items .item.right-items .pos {
-  position: relative;
-}
-
-#new-items .items .item.right-items img {
-  height: 400px;
-  border-radius: 5px;
-}
-
-#new-items .items .item.right-items div {
-  padding-right: 5px;
-}
-
-#new-items .items .new-btn {
+#new-items .new-btn {
   border: none;
   color: #FA3C45;
   background-color: #f6f7fb;
@@ -490,7 +424,7 @@
   left: 15px;
 }
 
-#new-items .items .new-model {
+#new-items .new-model {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,18 +440,18 @@
   left: 15%;
 }
 
-#new-items .items .new-model h2 {
+#new-items .new-model h2 {
   color: #FFFFFF;
   font-size: 39px;
 }
 
-#new-items .items .new-model h5 {
+#new-items .new-model h5 {
   color: #FFFFFF;
   padding: 0;
   margin-top: -15px;
 }
 
-#new-items .items .new-model span {
+#new-items .new-model span {
   color: #FA3C45;
   font-size: 31px;
   font-weight: 700;
@@ -548,6 +482,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#reviews .img-testimonial .img {
+  width: 520px;
+  height: 448px;
 }
 
 #reviews .img-testimonial .testimonial {
@@ -593,6 +532,11 @@
 
 #download-app {
   padding-top: 5%;
+}
+
+#download-app .img {
+  width: 443px;
+  height: 878px;
 }
 
 #download-app .download-our-app {
@@ -671,7 +615,7 @@
 
 #newsletter {
   background-color: #f7f7fc;
-  padding: 5% 0;
+  padding: 10% 0;
 }
 
 #newsletter .header-input {
@@ -885,7 +829,7 @@ footer {
 }
 
 .nav .left-side i::after {
-  background-color: #c5010a;
+  background-color: #c5010a !important;
 }
 
 #explore {
@@ -912,7 +856,8 @@ footer {
   display: flex;
 }
 
-#home-inventory .breadcrumb-inp ul li, #home-inventory .breadcrumb-inp ul a {
+#home-inventory .breadcrumb-inp ul li,
+#home-inventory .breadcrumb-inp ul a {
   color: black;
   font-size: 24px;
   font-weight: 700;
@@ -938,9 +883,84 @@ footer {
 
 #contents {
   padding-top: 5%;
+  background-color: #f7f7fc;
 }
 
 #contents .categories-tesla .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-bottom: 3%;
+}
+
+#contents .categories-tesla .categories .form-search {
+  position: relative;
+}
+
+#contents .categories-tesla .categories .form-search .search-btn {
+  border: none;
+  background-color: #FA3C45;
+  color: #FFFFFF;
+  padding: 12px 24px 12px 24px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+#contents .categories-tesla .categories .form-search .inp-search {
+  width: 415px;
+  padding: 2% 3%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border: 2px solid #ddd;
+}
+
+#contents .categories-tesla .categories .form-search h5 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: #11142d;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#contents .categories-tesla .categories ul {
+  position: absolute;
+  top: 0;
+  right: 6%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contents .categories-tesla .categories ul li {
+  font-size: 24px;
+  font-weight: 700;
+  color: #9a9ab0;
+}
+
+#contents .categories-tesla .categories ul li:first-child {
+  color: #FA3C45;
+}
+
+#contents .categories-tesla .categories ul li:nth-child(2) {
+  padding: 0 16%;
+}
+
+#contents .categories-tesla h1 {
+  padding-top: 3%;
+  font-size: 48px;
+  font-weight: 700;
+  color: #11142d;
+}
+
+#contents .categories-tesla .filters {
+  padding: 3% 0 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -949,21 +969,226 @@ footer {
           justify-content: space-between;
 }
 
-#contents .categories-tesla .categories .form-search .search-btn {
-  border: none;
-  background-color: #FA3C45;
-  color: #FFFFFF;
+#contents .categories-tesla .filters .tesla {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9a9ab0;
 }
 
-#contents .categories-tesla .categories ul {
+#contents .categories-tesla .filters .filter-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contents .categories-tesla .filters .filter-icon .sort {
+  font-size: 16px;
+  font-weight: 700;
+  color: #11142d;
+  margin: 0;
+}
+
+#contents .categories-tesla .filters .filter-icon form {
+  margin-left: 18px;
+}
+
+#contents .categories-tesla .filters .filter-icon form .form-select {
+  width: 125px;
+  border-radius: 5px;
+  padding: 5px 17px;
+}
+
+#contents .categories-tesla .filters .filter-icon .icons {
+  margin-left: 20px;
+}
+
+#contents .product-list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contents .product-list .list .tesla-model {
+  padding: 0 7%;
+}
+
+#contents .product-list .list .tesla-model h5 {
+  color: #FA3C45;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#contents .product-list .list .tesla-model .model-new {
+  font-size: 24px;
+  font-weight: 700;
+  color: #11142d;
+}
+
+#contents .product-list .list .tesla-model .model-new span {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+#contents .product-list .list .tesla-model ul {
+  width: 400px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#contents .categories-tesla .categories ul li:first-child {
+#contents .product-list .list .tesla-model ul li {
+  color: #92929d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#contents .product-list .list .tesla-model ul li p {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#contents .product-list .list .tesla-model ul li:nth-child(2) {
+  margin: 0 10%;
+}
+
+#contents .product-list .list .tesla-model .price-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contents .product-list .list .tesla-model .price-btn h3 {
+  font-size: 39px;
+  font-weight: 700;
   color: #FA3C45;
+}
+
+#contents .product-list .list .tesla-model .price-btn .details-btn {
+  padding: 11px 24px;
+  background-color: #FA3C45;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+#contents .product-list .list .img {
+  width: 296px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+#contents .product-list .list .img img {
+  border-radius: 8px;
+}
+
+#contents .product-list .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5% 0;
+}
+
+#contents .product-list .pagination li {
+  margin-right: 4%;
+}
+
+#contents .product-list .pagination li a {
+  color: #92929d;
+}
+
+#contents .product-list .pagination li:nth-child(2) a {
+  background-color: #c5010a;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+#contents .product-list .pagination li:last-child a {
+  color: #c5010a;
+}
+
+#contents .promo-card {
+  background-color: #c5010a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40% 22%;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+#contents .promo-card h3 {
+  text-align: center;
+}
+
+#contents .promo-card h5 {
+  text-align: center;
+  padding: 10% 0;
+}
+
+#contents .promo-card .details-btn {
+  border-radius: 8px;
+  padding: 10px 24px 10px 24px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+#contents .contact-us {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  padding: 22% 3%;
+}
+
+#contents .contact-us h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#contents .contact-us h5 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #92929d;
+  padding: 3% 0;
+}
+
+#contents .contact-us .contact-btn {
+  padding: 11px 24px;
+  border-radius: 8px;
+  background-color: #FA3C45;
+  color: #FFFFFF;
 }
 
 body {

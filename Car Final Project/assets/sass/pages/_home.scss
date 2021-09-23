@@ -2,7 +2,7 @@
 .nav {
   z-index: 9999;
   padding-top: 40px;
-  @include set-flex(flex,space-between,center,null);
+  @include set-flex(flex, space-between, center, null);
   .left-side {
     display: flex;
     i {
@@ -11,8 +11,8 @@
       color: $secondary-color;
       &::after {
         content: "";
-        @include set-position(absolute,18px,null,2px,null);
-        background-color: #151515;
+        @include set-position(absolute, 18px, null, 2px, null);
+        background-color: #151515 !important;
         width: 8px;
         height: 8px;
         border-radius: 50%;
@@ -24,7 +24,7 @@
       color: $secondary-color;
       &::after {
         content: "";
-        @include set-position(absolute,4px,null,-11px,null);
+        @include set-position(absolute, 4px, null, -11px, null);
         border-style: solid;
         border-width: 0 8px 8px 0;
         border-color: transparent $secondary-color transparent transparent;
@@ -35,17 +35,17 @@
     }
   }
   .nav-list {
-    @include set-flex(flex,null,center,null);
+    @include set-flex(flex, null, center, null);
     padding: 0;
     margin-left: -15%;
     li {
       margin-right: 20px;
       a {
-        @include set-font(16px,700);
+        @include set-font(16px, 700);
         color: $secondary-color;
       }
       i {
-        @include set-font(24px,400);
+        @include set-font(24px, 400);
         margin-left: -18px;
         color: $secondary-color;
       }
@@ -61,7 +61,7 @@
       position: relative;
       &::after {
         content: "";
-        @include set-position(absolute,6px,null,-60px,null);
+        @include set-position(absolute, 6px, null, -60px, null);
         width: 35px;
         height: 35px;
         border-radius: 50%;
@@ -76,10 +76,10 @@
 #model-sv {
   .model {
     background-image: linear-gradient(to right, #000000, #fff);
-    @include set-position(relative,-92px,null,0,null);
+    @include set-position(relative, -92px, null, 0, null);
     .box {
       padding: 90px;
-      @include set-flex(flex,space-between,center,null);
+      @include set-flex(flex, space-between, center, null);
       a {
         background-color: $primary-color;
         padding: 14px 24px;
@@ -91,12 +91,12 @@
         padding-top: 70px;
         h1 {
           color: $secondary-color;
-          @include set-font(62px,700);
+          @include set-font(62px, 700);
           padding: 20px 0;
         }
         h5 {
           color: $secondary-color;
-          @include set-font(24px,400);
+          @include set-font(24px, 400);
         }
         .list-model {
           display: flex;
@@ -175,7 +175,7 @@
   padding: 100px 0;
   .content-model {
     .content-icon {
-      @include set-flex(flex,space-between,null,null);
+      @include set-flex(flex, space-between, null, null);
       .icons {
         i {
           color: $primary-color;
@@ -190,27 +190,38 @@
         }
       }
     }
+    // .model-sx{
+    //     .img-first{
+    //       width: 816px;
+    //       height: 400px;
+    //     }
+    //     .img{
+    //       width:400px;
+    //       height: 400px;
+    //     }
+    // }
   }
-  .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    .p-2 {
-      height: 400px;
-      width: 400px;
-      img {
-        max-width: 100%;
-        object-fit: cover;
-      }
-    }
-    .p-1 {
-      height: 400px;
-      width: 816px;
-      img {
-        max-width: 100%;
-        object-fit: cover;
-      }
-    }
-  }
+
+  // .boxes {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   .p-2 {
+  //     height: 400px;
+  //     width: 400px;
+  //     img {
+  //       max-width: 100%;
+  //       object-fit: cover;
+  //     }
+  //   }
+  //   .p-1 {
+  //     height: 400px;
+  //     width: 816px;
+  //     img {
+  //       max-width: 100%;
+  //       object-fit: cover;
+  //     }
+  //   }
+  // }
 }
 // Section our-collection End
 
@@ -218,26 +229,30 @@
 #milestone {
   padding: 100px 0;
   background-color: #f7f7fc;
+  .img {
+    width: 608px;
+    height: 544px;
+  }
   .over-develop {
-    @include set-flex(flex,null,null,column);
+    @include set-flex(flex, null, null, column);
     padding: 30px 0 0 10px;
     h2 {
-      @include set-font(48px,700);
+      @include set-font(48px, 700);
     }
     p {
       color: #9a9ab0;
-      @include set-font(16px,400);
+      @include set-font(16px, 400);
     }
     ul {
       display: flex;
       padding: 0;
       li {
         margin-right: 16%;
-        @include set-font(50px,700);
+        @include set-font(50px, 700);
         color: #9a9ab0;
         &:first-child {
           color: $primary-color;
-          @include set-font(50px,700);
+          @include set-font(50px, 700);
           p {
             color: $primary-color;
           }
@@ -246,7 +261,6 @@
     }
   }
 }
-
 // Section Milestone End
 
 // Section Features Start
@@ -256,14 +270,14 @@
   .left-side {
     padding-right: 10%;
     h2 {
-      @include set-font(49px,700);
+      @include set-font(49px, 700);
       color: $secondary-color;
       text-transform: capitalize;
       padding-bottom: 20px;
     }
     p {
       color: $secondary-color;
-      @include set-font(16px,200);
+      @include set-font(16px, 200);
       line-height: 20px;
     }
     ul {
@@ -295,10 +309,13 @@
     }
   }
   .right-side {
-    border-radius: 5px;
-    img {
+    .img {
       border-radius: 5px;
-      width: 570px;
+      width: 608px;
+      height: 608px;
+      img {
+        border-radius: 5px;
+      }
     }
   }
 }
@@ -312,7 +329,7 @@
       text-align: center;
       text-transform: capitalize;
       h2 {
-        @include set-font(20px,700);
+        @include set-font(20px, 700);
         color: #11142d;
       }
     }
@@ -332,72 +349,74 @@
     h2 {
       color: #11142d;
       padding-bottom: 3%;
-      @include set-font(48px,700);
+      @include set-font(48px, 700);
       text-transform: capitalize;
     }
+    // .items {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   position: relative;
+    //   .img {
+    //     width: 608px;
+    //     height: 830px;
+    //     border-radius: 5px;
+    //     position: relative;
+    //     img {
+    //       border-radius: 5px;
+    //     }
+    //   }
+    //   .pos {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     position: relative;
+    //     .img {
+    //       width: 296px;
+    //       height: 304px;
+    //       border-radius: 5px;
+    //       img {
+    //         border-radius: 5px;
+    //       }
+    //     }
+    //   }
+    //   div {
+    //     padding-right: 5px;
+    //   }
+    // }
   }
-  .items {
+  
+  .new-btn {
+    border: none;
+    color: $primary-color;
+    background-color: #f6f7fb;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    border-radius: 5px;
+    top: 15px;
+    left: 15px;
+  }
+  .new-model {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    .item {
-      width: 558px;
-      border-radius: 5px;
-      position: relative;
-      img {
-        width: 540px;
-        border-radius: 5px;
-      }
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    h2 {
+      color: $secondary-color;
+      font-size: 39px;
     }
-    .item.right-items {
-      display: flex;
-      flex-wrap: wrap;
-      border-radius: 5px;
-      .pos {
-        position: relative;
-      }
-      img {
-        height: 400px;
-        border-radius: 5px;
-      }
-      div {
-        padding-right: 5px;
-      }
+    h5 {
+      color: $secondary-color;
+      padding: 0;
+      margin-top: -15px;
     }
-    .new-btn {
-      border: none;
+    span {
       color: $primary-color;
-      background-color: #f6f7fb;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 600;
-      position: absolute;
-      border-radius: 5px;
-      top: 15px;
-      left: 15px;
-    }
-    .new-model {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      bottom: 0;
-      left: 15%;
-      h2 {
-        color: $secondary-color;
-        font-size: 39px;
-      }
-      h5 {
-        color: $secondary-color;
-        padding: 0;
-        margin-top: -15px;
-      }
-      span {
-        color: $primary-color;
-        font-size: 31px;
-        font-weight: 700;
-        margin-bottom: 16px;
-      }
+      font-size: 31px;
+      font-weight: 700;
+      margin-bottom: 16px;
     }
   }
 }
@@ -411,7 +430,7 @@
     text-align: center;
     h2 {
       color: #2e2e2e;
-      @include set-font(48px,700);
+      @include set-font(48px, 700);
       padding: 1% 26%;
     }
     p {
@@ -420,27 +439,31 @@
   }
   .img-testimonial {
     display: flex;
+    .img{
+      width: 520px;
+      height:448px;
+    }
     .testimonial {
-      @include set-flex(flex,null,center,column);
+      @include set-flex(flex, null, center, column);
       padding: 3% 0;
       h4 {
-        @include set-font(31px,700);
+        @include set-font(31px, 700);
         padding: 0 11%;
         text-align: center;
       }
       p {
         color: #92929d;
-        @include set-font(19px,400);
+        @include set-font(19px, 400);
         text-align: center;
         padding: 5% 0;
       }
       h6 {
-        @include set-font(16px,700);
+        @include set-font(16px, 700);
         color: $primary-color;
       }
       span {
         color: #92929d;
-        @include set-font(14px,400);
+        @include set-font(14px, 400);
       }
     }
   }
@@ -450,22 +473,26 @@
 // Section Download-App Start
 #download-app {
   padding-top: 5%;
+  .img{
+    width:443px ;
+    height: 878px;
+  }
   .download-our-app {
     padding-top: 15%;
     h2 {
-      @include set-font(48px,700);
+      @include set-font(48px, 700);
       color: #11142d;
       text-transform: capitalize;
     }
     p {
-      @include set-font(16px,400);
+      @include set-font(16px, 400);
       color: #92929d;
       padding: 3% 0;
     }
     ul {
       padding: 0;
       li {
-        @include set-font(16px,700);
+        @include set-font(16px, 700);
         color: #11142d;
         margin-bottom: 2%;
         text-transform: capitalize;
@@ -486,7 +513,7 @@
         text-align: center;
         margin-right: 2%;
         color: black;
-        @include set-font(22px,700);
+        @include set-font(22px, 700);
         p {
           font-weight: 400;
           font-size: 12px;
@@ -516,16 +543,16 @@
 // Section Newsletter Start
 #newsletter {
   background-color: #f7f7fc;
-  padding: 5% 0;
+  padding: 10% 0;
   .header-input {
-    @include set-flex(flex,null,center,column);
+    @include set-flex(flex, null, center, column);
     h2 {
       color: #11142d;
-      @include set-font(48px,700);
+      @include set-font(48px, 700);
     }
     p {
       color: #92929d;
-      @include set-font(16px,400);
+      @include set-font(16px, 400);
     }
     form {
       display: flex;
@@ -534,13 +561,13 @@
       margin-right: 10%;
       .name-input,
       .email-input {
-        @include set-flex(flex,null,null,column);
+        @include set-flex(flex, null, null, column);
       }
       .email-input {
         margin: 0 2%;
       }
       .inp-btn {
-        @include set-position(absolute,null,3px,null,-127px);
+        @include set-position(absolute, null, 3px, null, -127px);
         background-color: $primary-color;
         color: $secondary-color;
         border-radius: 5px;
@@ -552,7 +579,7 @@
       }
       label {
         color: #11142d;
-        @include set-font(12px,600);
+        @include set-font(12px, 600);
       }
       input {
         box-shadow: none;
@@ -580,7 +607,7 @@ footer {
 // Section Footer Contact Start
 #footer-contact {
   .logo-company-social-contact {
-    @include set-flex(flex,space-between,null,null);
+    @include set-flex(flex, space-between, null, null);
     .logo-footer {
       .left-side {
         display: flex;
@@ -589,9 +616,9 @@ footer {
           font-size: 20px;
           color: $secondary-color;
           &::after {
-            background-color:$bg-color-red;
+            background-color: $bg-color-red;
             content: "";
-            @include set-position(absolute,18px,null,2px,null);
+            @include set-position(absolute, 18px, null, 2px, null);
             width: 8px;
             height: 8px;
             border-radius: 50%;
@@ -603,7 +630,7 @@ footer {
           color: $secondary-color;
           &::after {
             content: "";
-            @include set-position(absolute,4px,null,-11px,null);
+            @include set-position(absolute, 4px, null, -11px, null);
             width: 0;
             height: 0;
             border-style: solid;
@@ -616,7 +643,7 @@ footer {
         }
       }
       .our-studio {
-        @include set-font(14px,400);
+        @include set-font(14px, 400);
         color: $secondary-color;
         width: 53%;
         text-align: justify;
@@ -630,31 +657,30 @@ footer {
         li {
           margin-bottom: 10%;
           a {
-            @include set-font(14px,400);
+            @include set-font(14px, 400);
             color: $secondary-color;
           }
           &:nth-child(2) {
             margin-top: 25%;
           }
-          &:first-child{
-            a{
-              @include set-font(18px,700);
-              color:$secondary-color;
+          &:first-child {
+            a {
+              @include set-font(18px, 700);
+              color: $secondary-color;
             }
           }
         }
-        
       }
     }
-    .contact-list{
-      ul{
-        li{
+    .contact-list {
+      ul {
+        li {
           margin-bottom: 4%;
-          a{
+          a {
             color: $secondary-color;
-            @include set-font(14px,400);
-            @include set-flex(flex,nul,center,null);
-            i{
+            @include set-font(14px, 400);
+            @include set-flex(flex, nul, center, null);
+            i {
               margin-right: 3%;
               font-size: 22px;
             }
@@ -667,8 +693,8 @@ footer {
 // Section Footer Contact En
 
 // Section Copyright Start
-#copyright{
-  p{
+#copyright {
+  p {
     font-weight: 400;
     color: $secondary-color;
     padding-top: 3%;

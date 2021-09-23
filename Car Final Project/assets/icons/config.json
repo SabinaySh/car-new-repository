@@ -53,6 +53,18 @@
       "css": "mail",
       "code": 59399,
       "src": "typicons"
+    },
+    {
+      "uid": "48b87105bd38c20315f1b705b8c7b38c",
+      "css": "list",
+      "code": 59400,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "08db5357646aae59e018ba87f2d466cd",
+      "css": "th-large-outline",
+      "code": 59401,
+      "src": "typicons"
     }
   ]
 }
