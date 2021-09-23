@@ -1,0 +1,142 @@
+// Section Recommended For You Start
+#recommended-for-you {
+  .pagination {
+    @include set-flex(flex, center);
+    padding: 5% 0;
+    li {
+      margin-right: 4%;
+      a {
+        color: #92929d;
+      }
+      &:nth-child(2) {
+        a {
+          background-color: $bg-color-red;
+          color: $secondary-color;
+          border-radius: 4px;
+          padding: 0 6px;
+        }
+      }
+      &:last-child {
+        a {
+          color: $bg-color-red;
+        }
+      }
+    }
+  }
+}
+//Section Profile Message Start
+#profile-message {
+  .profile-paragraph {
+    background-color: $primary-color;
+    padding: 12% 8%;
+    height: 100vh;
+    position: relative;
+    top: -92px;
+    left: 0;
+    .profile {
+      display: flex;
+      justify-content: space-between;
+      .img {
+        width: 144px;
+        height: 144px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .contact {
+        color: $secondary-color;
+        h3 {
+          text-transform: capitalize;
+          @include set-font(39px, 700);
+        }
+        h5 {
+          color: #ecf2fe;
+          @include set-font(24px, 400);
+          text-transform: capitalize;
+          margin: 15px 0;
+        }
+        ul {
+          padding: 0;
+          li {
+            margin-right: 10px;
+            a {
+              color: $secondary-color;
+              @include set-font(14px, 600);
+              i {
+                margin-right: 4%;
+                font-size: 18px;
+              }
+            }
+            &:first-child{
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    p {
+      margin-top: 4%;
+      color: $secondary-color;
+      @include set-font(18px, 400);
+      text-align: justify;
+      line-height: 1.2;
+    }
+  }
+  .messages-form {
+    padding: 10% 8%;
+    height: 100vh;
+    position: relative;
+    top: -92px;
+    left: 0;
+    background-color: $bg-color-red;
+    .form-message {
+      .name,
+      .email,
+      .textarea {
+        display: flex;
+        flex-direction: column;
+        label {
+          @include set-font(16px, 700);
+          color: $secondary-color;
+        }
+        input,
+        textarea {
+          border-radius: 8px;
+          border: none;
+          padding: 4%;
+          margin-top: 3%;
+        }
+        input {
+          width: 458px;
+          height: 46px;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+      .email {
+        padding: 5% 0;
+      }
+      .textarea {
+        .message {
+          height: 130px;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .send-btn{
+      border: none;
+      margin-top: 5%;
+      border: 2px solid $secondary-color;
+      color: $secondary-color;
+      padding: 14px 24px;
+      background-color: $bg-color-red;
+      border-radius: 8px;
+    }
+  }
+}
+// Section Profile Message End

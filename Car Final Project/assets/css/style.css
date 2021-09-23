@@ -64,7 +64,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  margin-left: -15%;
+  margin-left: -4%;
 }
 
 .nav .nav-list li {
@@ -832,7 +832,7 @@ footer {
   background-color: #c5010a !important;
 }
 
-#explore {
+#hero {
   background-color: #c5010a;
   height: 50vh;
   position: relative;
@@ -840,7 +840,7 @@ footer {
   left: 0;
 }
 
-#explore h1 {
+#hero h1 {
   position: absolute;
   top: 50%;
   left: 39%;
@@ -1189,6 +1189,268 @@ footer {
   border-radius: 8px;
   background-color: #FA3C45;
   color: #FFFFFF;
+}
+
+#recommended-for-you {
+  background-color: #F7F7FC;
+  padding: 10% 0;
+}
+
+#recommended-for-you h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #11142D;
+  padding-bottom: 5%;
+}
+
+#recommended-for-you .item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#recommended-for-you .item .img {
+  width: 266px;
+  height: 406px;
+  border-radius: 8px;
+}
+
+#recommended-for-you .item .img img {
+  border-radius: 8px;
+}
+
+#recommended-for-you .item .new {
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  color: #FA3C45;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+
+#recommended-for-you .item .model-sv {
+  position: absolute;
+  bottom: 4%;
+  left: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#recommended-for-you .item .model-sv .txt {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+#recommended-for-you .item .model-sv p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+#recommended-for-you .item .model-sv .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FA3C45;
+}
+
+#recommended-for-you .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5% 0;
+}
+
+#recommended-for-you .pagination li {
+  margin-right: 4%;
+}
+
+#recommended-for-you .pagination li a {
+  color: #92929d;
+}
+
+#recommended-for-you .pagination li:nth-child(2) a {
+  background-color: #c5010a;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+#recommended-for-you .pagination li:last-child a {
+  color: #c5010a;
+}
+
+#profile-message .profile-paragraph {
+  background-color: #FA3C45;
+  padding: 12% 8%;
+  height: 100vh;
+  position: relative;
+  top: -92px;
+  left: 0;
+}
+
+#profile-message .profile-paragraph .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#profile-message .profile-paragraph .profile .img {
+  width: 144px;
+  height: 144px;
+}
+
+#profile-message .profile-paragraph .profile .img img {
+  border-radius: 50%;
+}
+
+#profile-message .profile-paragraph .profile .contact {
+  color: #FFFFFF;
+}
+
+#profile-message .profile-paragraph .profile .contact h3 {
+  text-transform: capitalize;
+  font-size: 39px;
+  font-weight: 700;
+}
+
+#profile-message .profile-paragraph .profile .contact h5 {
+  color: #ecf2fe;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 15px 0;
+}
+
+#profile-message .profile-paragraph .profile .contact ul {
+  padding: 0;
+}
+
+#profile-message .profile-paragraph .profile .contact ul li {
+  margin-right: 10px;
+}
+
+#profile-message .profile-paragraph .profile .contact ul li a {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#profile-message .profile-paragraph .profile .contact ul li a i {
+  margin-right: 4%;
+  font-size: 18px;
+}
+
+#profile-message .profile-paragraph .profile .contact ul li:first-child {
+  margin-bottom: 15px;
+}
+
+#profile-message .profile-paragraph p {
+  margin-top: 4%;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+#profile-message .messages-form {
+  padding: 10% 8%;
+  height: 100vh;
+  position: relative;
+  top: -92px;
+  left: 0;
+  background-color: #c5010a;
+}
+
+#profile-message .messages-form .form-message .name,
+#profile-message .messages-form .form-message .email,
+#profile-message .messages-form .form-message .textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#profile-message .messages-form .form-message .name label,
+#profile-message .messages-form .form-message .email label,
+#profile-message .messages-form .form-message .textarea label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+#profile-message .messages-form .form-message .name input,
+#profile-message .messages-form .form-message .name textarea,
+#profile-message .messages-form .form-message .email input,
+#profile-message .messages-form .form-message .email textarea,
+#profile-message .messages-form .form-message .textarea input,
+#profile-message .messages-form .form-message .textarea textarea {
+  border-radius: 8px;
+  border: none;
+  padding: 4%;
+  margin-top: 3%;
+}
+
+#profile-message .messages-form .form-message .name input,
+#profile-message .messages-form .form-message .email input,
+#profile-message .messages-form .form-message .textarea input {
+  width: 458px;
+  height: 46px;
+}
+
+#profile-message .messages-form .form-message .name input:focus,
+#profile-message .messages-form .form-message .email input:focus,
+#profile-message .messages-form .form-message .textarea input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#profile-message .messages-form .form-message .email {
+  padding: 5% 0;
+}
+
+#profile-message .messages-form .form-message .textarea .message {
+  height: 130px;
+}
+
+#profile-message .messages-form .form-message .textarea .message:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#profile-message .messages-form .send-btn {
+  border: none;
+  margin-top: 5%;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 14px 24px;
+  background-color: #c5010a;
+  border-radius: 8px;
 }
 
 body {

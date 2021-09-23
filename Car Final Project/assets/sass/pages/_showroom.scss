@@ -1,0 +1,52 @@
+// Section Recommended For You Start
+#recommended-for-you{
+    background-color: #F7F7FC;
+    padding: 10% 0;
+    h2{
+        @include set-font(48px,700);
+        color: #11142D;
+        padding-bottom: 5%;
+    }
+    .item{
+        position: relative;
+        margin-bottom: 10px;
+        .img{
+            width: 266px;
+            height: 406px;
+            border-radius: 8px;
+            img{
+                border-radius: 8px;
+            }
+        }
+        .new{
+            text-transform: uppercase;
+            @include set-position(absolute,15px,null,25px,null);
+            color: $primary-color;
+            background-color: $secondary-color;
+            @include set-font(14px,600);
+            border-radius: 4px;
+            padding: 0 5px;
+        }
+        .model-sv{
+            @include set-position(absolute,null,4%,35%,null);
+            @include set-flex(flex,null,center,column);
+            .txt{
+                @include set-font(24px,700);
+                color: $secondary-color;
+            }
+            p{
+                @include set-font(14px,600);
+                color: $secondary-color;
+                margin-bottom: 4px;
+                text-transform: capitalize
+            }
+            .price{
+                @include set-font(24px,700);
+                color: $primary-color;
+            }
+        }
+    }
+}
+// Section Recommended For You End
+
+// 
