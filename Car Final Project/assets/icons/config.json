@@ -65,6 +65,12 @@
       "css": "th-large-outline",
       "code": 59401,
       "src": "typicons"
+    },
+    {
+      "uid": "fb94e23ae1e7660aa63cc5f351ec7560",
+      "css": "right",
+      "code": 61816,
+      "src": "fontawesome"
     }
   ]
 }

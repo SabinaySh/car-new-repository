@@ -237,7 +237,11 @@
 
 #our-collection {
   background-color: #f7f7fc;
-  padding: 100px 0;
+  padding: 150px 0;
+}
+
+#our-collection .content-model {
+  padding-bottom: 3%;
 }
 
 #our-collection .content-model .content-icon {
@@ -271,24 +275,50 @@
   font-weight: 700;
 }
 
-#our-collection .model-sx .img {
-  width: 816px;
-  height: 400px;
+#our-collection .model-sx {
+  margin-bottom: 1%;
+  position: relative;
 }
 
-#our-collection .model-sx .img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+#our-collection .model-sx .pos-model-sx {
+  position: absolute;
+  bottom: 25px;
+  left: 45px;
 }
 
-#our-collection .images .img {
-  width: 400px;
-  height: 400px;
+#our-collection .model-sx .pos-model-sx p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #FDE5E6;
 }
 
-#our-collection .images .img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+#our-collection .model-sx .pos-model-sx h2 {
+  color: #FA3C45;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+#our-collection .model-sx .pos-model-sx ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#our-collection .model-sx .pos-model-sx ul li {
+  margin-right: 16%;
+  color: #FDE5E6;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#our-collection .model-sx .pos-model-sx i {
+  color: #FFFFFF;
+}
+
+#our-collection .col-md-4 .img:nth-child(1) {
+  margin-left: 5px;
 }
 
 #milestone {

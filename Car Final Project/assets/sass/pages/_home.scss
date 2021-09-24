@@ -72,7 +72,7 @@
 }
 // Navbar End
 
-// Section Model-Sv Start
+// Section Model Sv Start
 #model-sv {
   .model {
     background-image: linear-gradient(to right, #000000, #fff);
@@ -172,12 +172,12 @@
     }
   }
 }
-// Section Model-Sv End
+// Section Model Sv End
 
-// Section our-collection Start
+// Section Our Collection Start
 #our-collection {
   background-color: #f7f7fc;
-  padding: 100px 0;
+  padding: 150px 0;
   .content-model {
     .content-icon {
       @include set-flex(flex, space-between, null, null);
@@ -203,57 +203,46 @@
         }
       }
     }
-    // .model-sx{
-    //     .img-first{
-    //       width: 816px;
-    //       height: 400px;
-    //     }
-    //     .img{
-    //       width:400px;
-    //       height: 400px;
-    //     }
-    // }
+    padding-bottom: 3%;
   }
   .model-sx {
-    .img {
-      width: 816px;
-      height: 400px;
-      img {
-        object-fit: contain;
+    margin-bottom: 1%;
+    position: relative;
+    .pos-model-sx {
+      position: absolute;
+      bottom: 25px;
+      left: 45px;
+      p {
+        @include set-font(12px, 700);
+        // color: $secondary-color;
+        color: #FDE5E6;
+      }
+      h2 {
+        color: $primary-color;
+        @include set-font(50px, 700);
+        margin-top: -15px;
+      }
+      ul {
+        padding: 0;
+        display: flex;
+        li {
+          margin-right: 16%;
+          color: #FDE5E6;
+          @include set-font(14px, 700);
+        }
+      }
+      i {
+        color: $secondary-color;
       }
     }
   }
-  .images {
-    .img {
-      width: 400px;
-      height: 400px;
-      img {
-        object-fit: cover;
-      }
+  .col-md-4 {
+    .img:nth-child(1) {
+      margin-left: 5px;
     }
   }
-  // .boxes {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   .p-2 {
-  //     height: 400px;
-  //     width: 400px;
-  //     img {
-  //       max-width: 100%;
-  //       object-fit: cover;
-  //     }
-  //   }
-  //   .p-1 {
-  //     height: 400px;
-  //     width: 816px;
-  //     img {
-  //       max-width: 100%;
-  //       object-fit: cover;
-  //     }
-  //   }
-  // }
 }
-// Section our-collection End
+// Section Our Collection End
 
 // Section Milestone Start
 #milestone {
@@ -490,7 +479,7 @@
 }
 // Section Reviews End
 
-// Section Download-App Start
+// Section Download App Start
 #download-app {
   padding-top: 5%;
   .img {
@@ -558,7 +547,7 @@
     }
   }
 }
-// Section Download-App End
+// Section Download App End
 
 // Section Newsletter Start
 #newsletter {
