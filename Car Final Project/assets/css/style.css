@@ -1624,11 +1624,224 @@ footer {
   color: #ffffff;
 }
 
+#contents-credit {
+  padding: 50px 0 200px 0;
+  background-color: #f7f7fc;
+  margin-top: -92px;
+}
+
+#contents-credit .breadcrumb ul {
+  padding: 0 0 3% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contents-credit .breadcrumb ul li {
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#contents-credit .breadcrumb ul li a {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#contents-credit .promo-card {
+  background-color: #c5010a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40% 22%;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+#contents-credit .promo-card h3 {
+  text-align: center;
+}
+
+#contents-credit .promo-card h5 {
+  text-align: center;
+  padding: 10% 0;
+}
+
+#contents-credit .promo-card .details-btn {
+  border-radius: 8px;
+  padding: 10px 24px 10px 24px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+#contents-credit .contact-us {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12px;
+  padding: 9% 3%;
+}
+
+#contents-credit .contact-us h3 {
+  font-size: 39px;
+  font-weight: 700;
+  color: #11142d;
+  margin-bottom: 15px;
+}
+
+#contents-credit .contact-us form .email-inp {
+  margin: 15px 0;
+}
+
+#contents-credit .contact-us form .send-btn {
+  padding: 11px 24px;
+  border-radius: 8px;
+  background-color: #FA3C45;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 15px;
+}
+
+#contents-credit .contact-us form input,
+#contents-credit .contact-us form textarea {
+  width: 280px;
+  border: 1px solid #FA3C45;
+  outline: none;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+#contents-credit .contact-us form textarea {
+  height: 100px;
+}
+
+#contents-credit .intro {
+  position: relative;
+}
+
+#contents-credit .intro .intro-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#contents-credit .description {
+  background-color: #f7f7fc;
+  margin-top: 8%;
+}
+
+#contents-credit .description h2 {
+  font-size: 31px;
+  font-weight: 700;
+  color: #333333;
+}
+
+#contents-credit .description p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #92929d;
+  line-height: 1.2;
+}
+
+#contents-credit .loan-calculator {
+  border-radius: 8px;
+  padding: 50px;
+  background-color: #FFFFFF;
+}
+
+#contents-credit .loan-calculator h3 {
+  color: #11142d;
+  font-size: 39px;
+  font-weight: 700;
+}
+
+#contents-credit .loan-calculator p {
+  color: #92929d;
+  padding: 6px 0;
+}
+
+#contents-credit .loan-calculator form .car-price-inp,
+#contents-credit .loan-calculator form .down-payment,
+#contents-credit .loan-calculator form .interest-rate-inp,
+#contents-credit .loan-calculator form .periode-month-inp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contents-credit .loan-calculator form .rate-month-inp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5% 0;
+}
+
+#contents-credit .loan-calculator form .rate-month-inp .interest-rate-inp {
+  padding-right: 10px;
+}
+
+#contents-credit .loan-calculator form .rate-month-inp .periode-month-inp {
+  padding-left: 10px;
+}
+
+#contents-credit .loan-calculator form input {
+  border: 1px solid #FA3C45;
+  border-radius: 8px;
+  outline: none;
+  padding: 10px;
+}
+
+#contents-credit .loan-calculator form label {
+  color: #11142d;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 2%;
+}
+
+#contents-credit .loan-calculator form .calculate-btn {
+  border: none;
+  color: #FFFFFF;
+  padding: 14px 24px;
+  background-color: #FA3C45;
+  border-radius: 8px;
+  margin-top: 45px;
+}
+
 #newsletter .header-input .resource-btn {
   padding-top: 4%;
 }
 
-#newsletter .header-input .resource-btn .premium-btn, #newsletter .header-input .resource-btn .free-btn {
+#newsletter .header-input .resource-btn .premium-btn,
+#newsletter .header-input .resource-btn .free-btn {
   background-color: #FA3C45;
   color: #FFFFFF;
   border-radius: 8px;
@@ -1660,4 +1873,9 @@ li {
 
 a {
   text-decoration: none;
+}
+
+input, .textarea, select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }

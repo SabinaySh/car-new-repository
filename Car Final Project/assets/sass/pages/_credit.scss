@@ -1,4 +1,4 @@
-// Section Explore Start
+// Section Hero Start
 #hero {
   .credit {
     position: absolute;
@@ -9,30 +9,184 @@
     color: #ffffff;
   }
 }
-// Section Explore End
+// Section Hero End
+
+// Section Contents Credit Start
+#contents-credit {
+  padding: 50px 0 200px 0;
+  background-color: #f7f7fc;
+  margin-top: -92px;
+  .breadcrumb {
+    ul {
+      padding: 0 0 3% 0;
+      @include set-flex(flex, null, center, null);
+      li {
+        a {
+          color: black;
+          @include set-font(24px, 700);
+        }
+        color: black;
+        @include set-font(22px, 700);
+      }
+    }
+  }
+  .promo-card {
+    background-color: $bg-color-red;
+    @include set-flex(flex, null, center, column);
+    padding: 40% 22%;
+    color: $secondary-color;
+    border-radius: 8px;
+    h3 {
+      text-align: center;
+    }
+    h5 {
+      text-align: center;
+      padding: 10% 0;
+    }
+    .details-btn {
+      border-radius: 8px;
+      padding: 10px 24px 10px 24px;
+      border: 2px solid #ddd;
+      @include set-font(16px, 700);
+      color: $secondary-color;
+    }
+  }
+  .contact-us {
+    background-color: $secondary-color;
+    border-radius: 8px;
+    @include set-flex(flex, null, center, column);
+    margin-top: 12px;
+    padding: 9% 3%;
+    h3 {
+      @include set-font(39px, 700);
+      color: #11142d;
+      margin-bottom: 15px;
+    }
+    form {
+      .email-inp {
+        margin: 15px 0;
+      }
+      .send-btn {
+        padding: 11px 24px;
+        border-radius: 8px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: none;
+        margin-top: 15px;
+      }
+      input,
+      textarea {
+        width: 280px;
+        border: 1px solid $primary-color;
+        outline: none;
+        border-radius: 8px;
+        padding: 12px;
+      }
+      textarea {
+        height: 100px;
+      }
+    }
+  }
+  .intro {
+    position: relative;
+    .intro-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+  }
+  .description {
+    background-color: #f7f7fc;
+    h2 {
+      @include set-font(31px, 700);
+      color: #333333;
+    }
+    p {
+      @include set-font(15px, 400);
+      color: #92929d;
+      line-height: 1.2;
+    }
+    margin-top: 8%;
+  }
+  .loan-calculator {
+    border-radius: 8px;
+    padding: 50px;
+    background-color: $secondary-color;
+    h3 {
+      color: #11142d;
+      @include set-font(39px, 700);
+    }
+    p {
+      color: #92929d;
+      padding: 6px 0;
+    }
+    form {
+      .car-price-inp,
+      .down-payment,
+      .interest-rate-inp,
+      .periode-month-inp {
+        display: flex;
+        flex-direction: column;
+      }
+      .rate-month-inp {
+        display: flex;
+        margin: 5% 0;
+        .interest-rate-inp {
+          padding-right: 10px;
+        }
+        .periode-month-inp {
+          padding-left: 10px;
+        }
+      }
+      input {
+        border: 1px solid $primary-color;
+        border-radius: 8px;
+        outline: none;
+        padding: 10px;
+      }
+      label {
+        color: #11142d;
+        @include set-font(16px, 700);
+        padding-bottom: 2%;
+      }
+      .calculate-btn {
+        border: none;
+        color: $secondary-color;
+        padding: 14px 24px;
+        background-color: $primary-color;
+        border-radius: 8px;
+        margin-top: 45px;
+      }
+    }
+  }
+}
+// Section Contents Credit End
 
 // Section Newsletter Start
-#newsletter{
-    .header-input{
-        .resource-btn{
-            padding-top: 4%;
-            .premium-btn,.free-btn{
-                background-color: $primary-color;
-                color: $secondary-color;
-                border-radius: 8px;
-                padding: 18px 24px;
-            }
-            .premium-btn{
-                background-color: $primary-color;
-                color: $secondary-color;
-                margin-right: 10px;
-            }
-            .free-btn{
-                background-color: $secondary-color;
-                color:$primary-color;
-                border: 1px solid $primary-color;
-            }
-        }
+#newsletter {
+  .header-input {
+    .resource-btn {
+      padding-top: 4%;
+      .premium-btn,
+      .free-btn {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border-radius: 8px;
+        padding: 18px 24px;
+      }
+      .premium-btn {
+        background-color: $primary-color;
+        color: $secondary-color;
+        margin-right: 10px;
+      }
+      .free-btn {
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+      }
     }
+  }
 }
 // Section Newsletter End
