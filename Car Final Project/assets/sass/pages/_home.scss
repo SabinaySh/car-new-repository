@@ -215,7 +215,7 @@
       p {
         @include set-font(12px, 700);
         // color: $secondary-color;
-        color: #FDE5E6;
+        color: #fde5e6;
       }
       h2 {
         color: $primary-color;
@@ -227,7 +227,7 @@
         display: flex;
         li {
           margin-right: 16%;
-          color: #FDE5E6;
+          color: #fde5e6;
           @include set-font(14px, 700);
         }
       }
@@ -447,32 +447,34 @@
     }
   }
   .img-testimonial {
-    display: flex;
-    .img {
-      width: 520px;
-      height: 448px;
-    }
-    .testimonial {
-      @include set-flex(flex, null, center, column);
-      padding: 3% 0;
-      h4 {
-        @include set-font(31px, 700);
-        padding: 0 11%;
-        text-align: center;
+    .img-testimonial-owl {
+      display: flex;
+      .img-owl {
+        width: 520px;
+        height: 448px;
       }
-      p {
-        color: #92929d;
-        @include set-font(19px, 400);
-        text-align: center;
-        padding: 5% 0;
-      }
-      h6 {
-        @include set-font(16px, 700);
-        color: $primary-color;
-      }
-      span {
-        color: #92929d;
-        @include set-font(14px, 400);
+      .testimonial-owl {
+        @include set-flex(flex, null, center, column);
+        padding: 3% 0;
+        h4 {
+          @include set-font(31px, 700);
+          padding: 0 11%;
+          text-align: center;
+        }
+        p {
+          color: #92929d;
+          @include set-font(19px, 400);
+          text-align: center;
+          padding: 5% 0;
+        }
+        h6 {
+          @include set-font(16px, 700);
+          color: $primary-color;
+        }
+        span {
+          color: #92929d;
+          @include set-font(14px, 400);
+        }
       }
     }
   }
