@@ -6,11 +6,13 @@
 @import 'pages/explore';
 @import 'pages/showroom';
 @import 'pages/contact';
+@import 'pages/credit';
 
 body{
     font-family: $primary-font;
     overflow-x: hidden;
     box-sizing: border-box;
+    
 }
 li{
     list-style: none;

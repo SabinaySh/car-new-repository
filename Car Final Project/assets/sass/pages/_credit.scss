@@ -1,0 +1,38 @@
+// Section Explore Start
+#hero {
+  .credit {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+// Section Explore End
+
+// Section Newsletter Start
+#newsletter{
+    .header-input{
+        .resource-btn{
+            padding-top: 4%;
+            .premium-btn,.free-btn{
+                background-color: $primary-color;
+                color: $secondary-color;
+                border-radius: 8px;
+                padding: 18px 24px;
+            }
+            .premium-btn{
+                background-color: $primary-color;
+                color: $secondary-color;
+                margin-right: 10px;
+            }
+            .free-btn{
+                background-color: $secondary-color;
+                color:$primary-color;
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+}
+// Section Newsletter End
