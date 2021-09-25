@@ -1298,14 +1298,14 @@ footer {
 }
 
 #recommended-for-you {
-  background-color: #F7F7FC;
+  background-color: #f7f7fc;
   padding: 10% 0;
 }
 
 #recommended-for-you h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #11142D;
+  color: #11142d;
   padding-bottom: 5%;
 }
 
@@ -1373,6 +1373,12 @@ footer {
   color: #FA3C45;
 }
 
+#tesla-contents {
+  background-color: #f7f7fc;
+  margin-top: -91px;
+  padding: 100px 0;
+}
+
 #tesla-contents .breadcrumb-list ul {
   padding: 0;
   display: -webkit-box;
@@ -1390,43 +1396,366 @@ footer {
   margin: 0 -8px;
 }
 
-#tesla-contents .left-side .tesla-price {
+#tesla-contents .promo-card {
+  background-color: #c5010a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 26% 22%;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+#tesla-contents .promo-card h3 {
+  text-align: center;
+}
+
+#tesla-contents .promo-card h5 {
+  text-align: center;
+  padding: 10% 0;
+}
+
+#tesla-contents .promo-card .details-btn {
+  border-radius: 8px;
+  padding: 10px 24px 10px 24px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+#tesla-contents .contact-us {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12px;
+  padding: 16% 3%;
+}
+
+#tesla-contents .contact-us h3 {
+  font-size: 39px;
+  font-weight: 700;
+  color: #11142d;
+  margin-bottom: 15px;
+}
+
+#tesla-contents .contact-us form .email-inp {
+  margin: 15px 0;
+}
+
+#tesla-contents .contact-us form .send-btn {
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: #FA3C45;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 15px;
+}
+
+#tesla-contents .contact-us form input,
+#tesla-contents .contact-us form textarea {
+  width: 280px;
+  border: 1px solid #FA3C45;
+  outline: none;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+#tesla-contents .contact-us form textarea {
+  height: 125px;
+}
+
+#tesla-contents .customer-advisor {
+  background-color: #FFFFFF;
+  margin-top: 12px;
+  padding: 7% 10%;
+  border-radius: 8px;
+}
+
+#tesla-contents .customer-advisor h5 {
+  color: #11142d;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#tesla-contents .customer-advisor .img-name-view-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+#tesla-contents .customer-advisor .img-name-view-btn .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+#tesla-contents .customer-advisor .img-name-view-btn h6 {
+  color: #11142d;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+#tesla-contents .customer-advisor .img-name-view-btn .view-profile-btn {
+  padding: 18px 24px;
+  background-color: #FA3C45;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+#tesla-contents .featured-card {
+  background-color: #FFFFFF;
+  margin-top: 12px;
+  padding: 13% 10%;
+  border-radius: 8px;
+}
+
+#tesla-contents .featured-card h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #11142d;
+  padding-bottom: 20px;
+}
+
+#tesla-contents .featured-card .img-tesla-model {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#tesla-contents .featured-card .img-tesla-model .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+#tesla-contents .featured-card .img-tesla-model h5 {
+  font-size: 24x;
+  font-weight: 700;
+  color: #FA3C45;
+}
+
+#tesla-contents .featured-card .img-tesla-model h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #11142d;
+}
+
+#tesla-contents .featured-card .img-tesla-model .tesla-model-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+}
+
+#tesla-contents .tags {
+  background-color: #FFFFFF;
+  margin-top: 12px;
+  padding: 13% 10%;
+  border-radius: 8px;
+}
+
+#tesla-contents .tags h5 {
+  color: #11142d;
+}
+
+#tesla-contents .tags a {
+  padding: 8px 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #FA3C45;
+  color: #FA3C45;
+  border-radius: 24px;
+}
+
+#tesla-contents .left-side .images {
+  margin-top: 5px;
+}
+
+#tesla-contents .left-side .images .img:nth-child(2) {
+  margin: 0 5px;
+}
+
+#tesla-contents .left-side .img-big {
+  margin-right: -5px;
+}
+
+#tesla-contents .left-side .description {
+  background-color: #f7f7fc;
+  margin-top: 8%;
+}
+
+#tesla-contents .left-side .description h2 {
+  font-size: 31px;
+  font-weight: 700;
+  color: #333333;
+}
+
+#tesla-contents .left-side .description p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #92929d;
+  line-height: 1.2;
+  padding-top: 15px;
+}
+
+#tesla-contents .left-side .intro {
+  position: relative;
+  padding-top: 15px;
+}
+
+#tesla-contents .left-side .intro .intro-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#tesla-contents .left-side .specification {
+  padding: 30px 0;
+}
+
+#tesla-contents .left-side .specification .specification-feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#tesla-contents .left-side .specification .specification-feature h2 {
+  color: #333333;
+  font-size: 31px;
+  font-weight: 700;
+}
+
+#tesla-contents .left-side .specification .specification-feature h2:nth-child(1) {
+  margin-right: 20%;
+}
+
+#tesla-contents .left-side .specification .list {
+  padding-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#tesla-contents .left-side .specification .list ul {
+  padding: 0;
+}
+
+#tesla-contents .left-side .specification .list ul:nth-child(2) {
+  padding: 0 6%;
+}
+
+#tesla-contents .left-side .specification .list ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+#tesla-contents .left-side .specification .list ul li:nth-child(4) {
+  border: none;
+}
+
+#tesla-contents .left-side .specification .list ul li .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+#tesla-contents .left-side .specification .list ul li .icon i {
+  color: #FFFFFF;
+  background-color: #FA3C45;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+}
+
+#tesla-contents .left-side .specification .list ul li .icon h6 {
+  color: #92929D;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#tesla-contents .left-side .specification .list ul li h6 {
   color: #11142D;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#tesla-contents .tesla-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+#tesla-contents .tesla-price h2 {
   font-size: 48px;
   font-weight: 700;
 }
 
-#tesla-contents .left-side .tesla-price .price {
+#tesla-contents .tesla-price .tesla {
+  color: #11142d;
+}
+
+#tesla-contents .tesla-price .price {
   color: #FA3C45;
-}
-
-#tesla-contents .left-side .image-placeholder .img {
-  width: 816px;
-  height: 558px;
-  border-radius: 8px;
-}
-
-#tesla-contents .left-side .image-placeholder .img img {
-  border-radius: 8px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-#tesla-contents .left-side .image-placeholder .images-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#tesla-contents .left-side .image-placeholder .images-list .img {
-  width: 267px;
-  height: 240px;
 }
 
 #recommended-for-you .pagination {
