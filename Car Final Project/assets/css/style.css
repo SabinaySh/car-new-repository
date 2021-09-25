@@ -1534,7 +1534,7 @@ footer {
 #tesla-contents .featured-card {
   background-color: #FFFFFF;
   margin-top: 12px;
-  padding: 13% 10%;
+  padding: 8% 10%;
   border-radius: 8px;
 }
 
@@ -1590,12 +1590,15 @@ footer {
 #tesla-contents .tags {
   background-color: #FFFFFF;
   margin-top: 12px;
-  padding: 13% 10%;
+  padding: 10% 10%;
   border-radius: 8px;
 }
 
 #tesla-contents .tags h5 {
+  font-size: 24px;
+  font-weight: 700;
   color: #11142d;
+  padding-bottom: 20px;
 }
 
 #tesla-contents .tags a {
@@ -1604,6 +1607,9 @@ footer {
   border: 1px solid #FA3C45;
   color: #FA3C45;
   border-radius: 24px;
+  font-weight: 700;
+  margin: 0 10px 15px 0;
+  display: inline-block;
 }
 
 #tesla-contents .left-side .images {
@@ -1665,28 +1671,29 @@ footer {
   color: #333333;
   font-size: 31px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 #tesla-contents .left-side .specification .specification-feature h2:nth-child(1) {
   margin-right: 20%;
 }
 
-#tesla-contents .left-side .specification .list {
+#tesla-contents .left-side .specification .specifiaction-list {
   padding-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#tesla-contents .left-side .specification .list ul {
+#tesla-contents .left-side .specification .specifiaction-list ul {
   padding: 0;
 }
 
-#tesla-contents .left-side .specification .list ul:nth-child(2) {
+#tesla-contents .left-side .specification .specifiaction-list ul:nth-child(2) {
   padding: 0 6%;
 }
 
-#tesla-contents .left-side .specification .list ul li {
+#tesla-contents .left-side .specification .specifiaction-list ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1696,22 +1703,22 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5% 0;
-  border-bottom: 1px solid #E1E1E1;
+  padding: 7% 0;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-#tesla-contents .left-side .specification .list ul li:nth-child(4) {
+#tesla-contents .left-side .specification .specifiaction-list ul li:nth-child(4) {
   border: none;
 }
 
-#tesla-contents .left-side .specification .list ul li .icon {
+#tesla-contents .left-side .specification .specifiaction-list ul li .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
 }
 
-#tesla-contents .left-side .specification .list ul li .icon i {
+#tesla-contents .left-side .specification .specifiaction-list ul li .icon i {
   color: #FFFFFF;
   background-color: #FA3C45;
   width: 30px;
@@ -1722,17 +1729,73 @@ footer {
   text-align: center;
 }
 
-#tesla-contents .left-side .specification .list ul li .icon h6 {
-  color: #92929D;
+#tesla-contents .left-side .specification .specifiaction-list ul li .icon h6 {
+  color: #92929d;
   font-size: 16px;
   font-weight: 700;
 }
 
-#tesla-contents .left-side .specification .list ul li h6 {
-  color: #11142D;
+#tesla-contents .left-side .specification .specifiaction-list ul li h6 {
+  color: #11142d;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+}
+
+#tesla-contents .left-side .specification .specifiaction-list.active {
+  display: none;
+}
+
+#tesla-contents .left-side .specification .feature-list {
+  padding-top: 11%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#tesla-contents .left-side .specification .feature-list ul {
+  padding: 0;
+}
+
+#tesla-contents .left-side .specification .feature-list ul:nth-child(2) {
+  padding: 0 6%;
+}
+
+#tesla-contents .left-side .specification .feature-list ul li {
+  padding: 7% 0;
+}
+
+#tesla-contents .left-side .specification .feature-list ul li:nth-child(4) {
+  border: none;
+}
+
+#tesla-contents .left-side .specification .feature-list ul li .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+#tesla-contents .left-side .specification .feature-list ul li .icon i {
+  color: #FFFFFF;
+  background-color: #FA3C45;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+#tesla-contents .left-side .specification .feature-list ul li .icon h6 {
+  color: #92929d;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#tesla-contents .left-side .specification .feature-list.active {
+  display: none;
 }
 
 #tesla-contents .tesla-price {

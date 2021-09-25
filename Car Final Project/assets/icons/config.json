@@ -77,6 +77,12 @@
       "css": "arrows-cw",
       "code": 59402,
       "src": "websymbols"
+    },
+    {
+      "uid": "ce50292e85eb5d6ee3be61b32bf2bdf3",
+      "css": "ok-1",
+      "code": 59404,
+      "src": "mfglabs"
     }
   ]
 }
